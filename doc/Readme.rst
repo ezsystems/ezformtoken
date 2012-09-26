@@ -86,6 +86,10 @@ Using the hidden tag with id='ezxform_token_js' is the best option for ajax
 code and it is explained in example #A. If your ajax code is executed before
 body tag, then you will have to use option #3 as explained in example #B.
 
+Last but not least: if you are using ajax code to send POST requests with an xml
+or json payload, you have to inject the token in a custom http header:
+X-CSRF-Token
+
 Examples:
 A Using DOM:
 
